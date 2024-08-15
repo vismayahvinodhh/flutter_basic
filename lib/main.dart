@@ -1,4 +1,48 @@
 import 'package:flutter/material.dart';
+import 'package:widgetsvs/page2.dart';
+import 'package:widgetsvs/rowandcoloumn.dart';
+import 'package:widgetsvs/seperatorbuilder.dart';
+import 'package:widgetsvs/task2.dart';
+import 'package:widgetsvs/loginpage.dart';
+import 'package:widgetsvs/task3.dart';
+import 'package:widgetsvs/textbutton.dart';
+import 'package:widgetsvs/textwidget.dart';
+import 'package:widgetsvs/whatsapp.dart';
+
+
+
+import 'Colourwidget.dart';
+import 'Expanded_widgets.dart';
+import 'Floatingactionwidget.dart';
+import 'Listview.dart';
+import 'card.dart';
+import 'fbpage.dart';
+import 'NavigationWidget.dart';
+import 'Newtask.dart';
+import 'Page1.dart';
+import 'Secondpage.dart';
+import 'Firstpage.dart';
+import 'Thirdpage.dart';
+import 'Widgetstext.dart';
+import 'Inboxwidget.dart';
+import 'chess.dart';
+import 'Coffeetask/coffeeshp3.dart';
+import 'Coffeetask/coffeeshp3.dart';
+import 'Coffeetask/coffeeshp1.dart';
+import 'Coffeetask/coffeeshp2.dart';
+import 'Coffeetask/coffeeshp4.dart';
+import 'Coffeetask/coffeeshp5.dart';
+import 'containers.dart';
+import 'iconwidget.dart';
+import 'imagewidget.dart';
+import 'independencedayposter.dart';
+import 'listviewwidgetbuilder.dart';
+import 'loginpage2.dart';
+import 'Tripsmountain.dart';
+import 'Discover.dart';
+import 'newtask2.dart';
+import 'newtask3.dart';
+import 'dayposter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +54,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -31,95 +75,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:  Cardwidget ()
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
