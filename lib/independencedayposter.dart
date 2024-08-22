@@ -24,7 +24,7 @@ class _DayposterrState extends State<Dayposterr> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 40),
+              SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SafeArea(

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:widgetsvs/Coffeetask/coffeeshp2.dart';
-import 'package:widgetsvs/Coffeetask/coffeeshp5.dart';
+import 'package:flutterbasic/Coffeetask/coffeeshp2.dart';
+import 'package:flutterbasic/Coffeetask/coffeeshp5.dart';
 
 class Coffeeshoppg4 extends StatefulWidget {
   const Coffeeshoppg4({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgetsvs/newtask2.dart';
+import 'package:flutterbasic/newtask2.dart';
 
 class nav_3 extends StatefulWidget {
   const nav_3({super.key});

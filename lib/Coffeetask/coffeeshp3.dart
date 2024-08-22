@@ -60,6 +60,7 @@ class _Coffeeshoppg3State extends State<Coffeeshoppg3> {
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
+
               Text(
                 "(230)",
                 style: TextStyle(
@@ -67,7 +68,37 @@ class _Coffeeshoppg3State extends State<Coffeeshoppg3> {
                     fontWeight: FontWeight.normal,
                     color: Colors.grey),
               ),
+              SizedBox(
+                width: 135,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey,
+                    image: DecorationImage(
+                        image: AssetImage("assets/coffeshpmini1.png"),
+                        fit: BoxFit.fill)),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey,
+                    image: DecorationImage(
+                        image: AssetImage("assets/coffeeshpmini2.png"),
+                        fit: BoxFit.fill)),
+              ),
+
+
+
             ],
+
           ),
           SizedBox(
             height: 20,
@@ -184,17 +215,20 @@ class _Coffeeshoppg3State extends State<Coffeeshoppg3> {
                 },));
               },
                 child: Container(
+                  width: 170,
                   height: 50,
-                  width: 160,
-                  color: Colors.orange,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.deepOrangeAccent,
+                  ),
                   child: Center(
                       child: Text(
-                    "Buy Now",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white),
-                  )),
+                        "Buy Now",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      )),
                 ),
               )
             ],

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'coffeeshp2.dart';
 
-
-
 class Coffeeshoppg1 extends StatefulWidget {
   const Coffeeshoppg1({super.key});
 
@@ -29,7 +27,8 @@ class _Coffeeshoppg1State extends State<Coffeeshoppg1> {
             width: 490,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/coffee.png"), fit: BoxFit.fill)),
+                    image: AssetImage("Coffeetask/coffee1.jpg"),
+                    fit: BoxFit.fill)),
           ),
           Text(
             "Coffee so good,\nyour taste buds\n     will love it.",
@@ -51,9 +50,11 @@ class _Coffeeshoppg1State extends State<Coffeeshoppg1> {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Coffeeshoppg2();
-              },));
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return Coffeeshoppg2();
+                },
+              ));
             },
             child: Container(
               child: Row(
