@@ -32,7 +32,7 @@ class _NavigationmentacockState extends State<Navigationmentacock> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(backgroundColor: Colors.black,
 
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
