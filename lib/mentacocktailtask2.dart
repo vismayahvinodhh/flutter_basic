@@ -22,7 +22,8 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                 width: 420,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/menta1.jpg"),fit: BoxFit.cover)),
+                        image: AssetImage("assets/menta1.jpg"),
+                        fit: BoxFit.cover)),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 28, top: 60),
@@ -34,9 +35,9 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                       color: Colors.black),
                   child: Center(
                       child: Icon(
-                        Icons.arrow_back_ios,
-                        color: Colors.white,
-                      )),
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                  )),
                 ),
               ),
               Padding(
@@ -97,9 +98,9 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                               child: Text(
-                                "+",
-                                style: TextStyle(color: Colors.white, fontSize: 20),
-                              )),
+                            "+",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          )),
                         ),
                       ),
                       Padding(
@@ -112,9 +113,9 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                               child: Text(
-                                "2",
-                                style: TextStyle(color: Colors.white, fontSize: 15),
-                              )),
+                            "2",
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          )),
                         ),
                       ),
                       Padding(
@@ -127,13 +128,13 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.only(bottom: 13),
-                                child: Text(
-                                  "-",
-                                  style:
+                            padding: const EdgeInsets.only(bottom: 13),
+                            child: Text(
+                              "-",
+                              style:
                                   TextStyle(color: Colors.white, fontSize: 25),
-                                ),
-                              )),
+                            ),
+                          )),
                         ),
                       ),
                     ],
@@ -297,8 +298,8 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                             child: Container(
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage(
-                                          "assets/card.png"),fit: BoxFit.cover)),
+                                      image: AssetImage("assets/card.png"),
+                                      fit: BoxFit.cover)),
                             )),
                       ),
                       Padding(
@@ -342,7 +343,7 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 763, left: 30),
+                padding: const EdgeInsets.only(top: 780, left: 30),
                 child: Row(
                   children: [
                     Container(
@@ -372,8 +373,10 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                             padding: const EdgeInsets.only(top: 30),
                             child: Text(
                               "Total Drinks",
-                              style:
-                              TextStyle(color: Colors.grey.shade400,fontSize: 11,fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  color: Colors.grey.shade400,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ],
@@ -397,7 +400,7 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                           size: 35,
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 26,bottom: 30),
+                          padding: const EdgeInsets.only(left: 26, bottom: 30),
                           child: Text(
                             "32",
                             style: TextStyle(
@@ -406,10 +409,15 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
                                 fontWeight: FontWeight.bold),
                           ),
                         ),
-
                         Padding(
-                          padding: const EdgeInsets.only(top: 35,left: 6),
-                          child: Text("Total Drinks",style: TextStyle(color: Colors.grey.shade400,fontSize: 10,fontWeight: FontWeight.bold),),
+                          padding: const EdgeInsets.only(top: 35, left: 6),
+                          child: Text(
+                            "Total Drinks",
+                            style: TextStyle(
+                                color: Colors.grey.shade400,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ]),
                     ],

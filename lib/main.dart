@@ -12,6 +12,16 @@ import 'package:flutterbasic/loginpage.dart';
 import 'package:flutterbasic/task3.dart';
 import 'package:flutterbasic/textbutton.dart';
 import 'package:flutterbasic/textwidget.dart';
+import 'package:flutterbasic/vehicletask/Navigationvehicle.dart';
+
+import 'package:flutterbasic/vehicletask/vehiclepage1.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage2.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage3.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage4.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage5.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage6.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage7.dart';
+import 'package:flutterbasic/vehicletask/vehiclepage8.dart';
 import 'package:flutterbasic/whatsapp.dart';
 import 'package:flutterbasic/stack.dart';
 
@@ -70,6 +80,8 @@ import 'mentacocktailtask2.dart';
 import 'navigationcar.dart';
 import 'newtask2.dart';
 import 'cardesignpage1.dart';
+import 'vehicletask/vehiclepage1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -101,7 +113,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  Cocktailpage2()
+      home:  Adminloginpage()
     );
   }
 }
