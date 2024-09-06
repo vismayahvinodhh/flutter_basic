@@ -388,7 +388,7 @@ class _Cocktailpage2State extends State<Cocktailpage2> {
               Padding(
                 padding: const EdgeInsets.only(top: 770, left: 105),
                 child: Container(
-                  height: 70,
+                  height: 30,
                   width: 80,
                   decoration: BoxDecoration(color: Colors.black),
                   child: Row(

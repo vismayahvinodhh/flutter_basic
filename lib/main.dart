@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutterbasic/minofoodtask2.dart';
 import 'package:flutterbasic/radiobuttonwidget.dart';
 import 'package:flutterbasic/snackbarwidget.dart';
@@ -25,8 +26,7 @@ import 'package:flutterbasic/vehicletask/vehiclepage8.dart';
 import 'package:flutterbasic/whatsapp.dart';
 import 'package:flutterbasic/stack.dart';
 
-
-
+import 'Animationwidget/Lottiwidget.dart';
 import 'Cardesignpage2.dart';
 import 'Cardesignpage3.dart';
 import 'Cardesignpage4.dart';
@@ -45,6 +45,9 @@ import 'Pickers/Datepicker.dart';
 import 'Pickers/Imagepicker.dart';
 import 'Pickers/Timepicker.dart';
 import 'Radiobttneg.dart';
+import 'Sharedpreference/Biodetails.dart';
+import 'Sharedpreference/biodata2.dart';
+import 'URL launcher.dart';
 import 'alertdialogboxwidget.dart';
 import 'card.dart';
 import 'cardesignhomepage.dart';
@@ -92,29 +95,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home:  Adminloginpage()
+    return ScreenUtilInit(
+      builder: (context, child) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          home:Biodata_1 ()),
+      designSize: Size(390, 844),
     );
   }
 }
-
