@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutterbasic/minofoodtask2.dart';
+import 'package:flutterbasic/popup.dart';
 import 'package:flutterbasic/radiobuttonwidget.dart';
 import 'package:flutterbasic/snackbarwidget.dart';
 import 'package:flutterbasic/stack.dart';
@@ -25,6 +26,12 @@ import 'package:flutterbasic/vehicletask/vehiclepage7.dart';
 import 'package:flutterbasic/vehicletask/vehiclepage8.dart';
 import 'package:flutterbasic/whatsapp.dart';
 import 'package:flutterbasic/stack.dart';
+import 'package:flutterbasic/whatsapptask/whatsappcallpage.dart';
+import 'package:flutterbasic/whatsapptask/whatsappcommunitypage.dart';
+import 'package:flutterbasic/whatsapptask/whatsapphomepage.dart';
+import 'package:flutterbasic/whatsapptask/whatsappnavigationpage.dart';
+import 'package:flutterbasic/whatsapptask/whatsappsettingspage.dart';
+import 'package:flutterbasic/whatsapptask/whatsappupdatepage.dart';
 
 import 'Animationwidget/Lottiwidget.dart';
 import 'Cardesignpage2.dart';
@@ -103,7 +110,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home:Biodata_1 ()),
+          home:Whatsapp_home ()),
       designSize: Size(390, 844),
     );
   }
