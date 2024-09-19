@@ -78,10 +78,13 @@ import 'Coffeetask/coffeeshp2.dart';
 import 'Coffeetask/coffeeshp4.dart';
 import 'Coffeetask/coffeeshp5.dart';
 import 'containers.dart';
+import 'fruitstask/fruitstaskpage1.dart';
+import 'fruitstask/fruittabbar.dart';
 import 'iconwidget.dart';
 import 'imagewidget.dart';
 import 'independencedayposter.dart';
 import 'listviewwidgetbuilder.dart';
+import 'location.dart';
 import 'loginpage2.dart';
 import 'Tripsmountain.dart';
 import 'Discover.dart';
@@ -91,6 +94,7 @@ import 'navigationcar.dart';
 import 'newtask2.dart';
 import 'cardesignpage1.dart';
 import 'vehicletask/vehiclepage1.dart';
+import 'fruitstask/fruitstaskpage2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -110,7 +114,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home:Whatsapp_home ()),
+          home:Fruit_page1 ()),
       designSize: Size(390, 844),
     );
   }

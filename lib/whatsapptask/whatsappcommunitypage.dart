@@ -14,10 +14,16 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
     return Scaffold(
       appBar: new AppBar(
         automaticallyImplyLeading: false,
-        title: new Text(
-          " Communities",
-          style: TextStyle(
-              color: Colors.white, fontSize: 25.0, fontWeight: FontWeight.w600),
+        title: Column(
+          children: [
+            new Text(
+              " Communities",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w600),
+            ),
+          ],
         ),
         actions: [
           Padding(
@@ -29,18 +35,28 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
-            child: Icon(
-              CupertinoIcons.camera,
-              color: Colors.white,
+            child: InkWell(
+              child: Icon(
+                CupertinoIcons.camera,
+                color: Colors.white,
+              ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: Icon(
+          PopupMenuButton(
+            icon: Icon(
               Icons.more_vert,
               color: Colors.white,
             ),
+            itemBuilder: (BuildContext contesxt) {
+              return [
+                PopupMenuItem(
+                    child: Column(
+                  children: [Text('abcdefg')],
+                ))
+              ];
+            },
           ),
+
         ],
         backgroundColor: Color.fromRGBO(11, 20, 27, 1),
       ),
@@ -53,9 +69,10 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
               children: [
                 SizedBox(
                   width: 10,
-                ),Container(
+                ),
+                Container(
                   child: Padding(
-                    padding: const EdgeInsets.only(left: 30,top: 35),
+                    padding: const EdgeInsets.only(left: 30, top: 35),
                     child: Stack(
                       children: [
                         Container(
@@ -66,10 +83,10 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                               child: Icon(
-                                CupertinoIcons.add,
-                                color: Colors.black,
-                                size: 15,
-                              )),
+                            CupertinoIcons.add,
+                            color: Colors.black,
+                            size: 15,
+                          )),
                         ),
                       ],
                     ),
@@ -78,8 +95,9 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
                   width: 50,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      image: DecorationImage(image: AssetImage("assets/community.jpg"),fit: BoxFit.cover)
-                  ),
+                      image: DecorationImage(
+                          image: AssetImage("assets/community.jpg"),
+                          fit: BoxFit.cover)),
                 ),
                 SizedBox(
                   width: 25,
@@ -118,56 +136,67 @@ class _Whatsapp_communityState extends State<Whatsapp_community> {
           ),
           Expanded(
               child: ListView.builder(
-                itemCount: 20,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(left: 10, top: 0, right: 10),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 10,bottom: 20),
-                      child: Row(
-                        children: [Container(
-                          height: 55,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(image: AssetImage("assets/community.jpg"),fit: BoxFit.cover)
-                          ),
-                        ),
-                          SizedBox(width: 20,),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 5),
-                            child: Column(
-                              children: [
-                                Text(
-                                  "Community Name",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 45),
-                                  child: Text('Last message',style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.bold,
-                                  ),),
-                                )
-                              ],
-                            ),
-                          ),
-                          SizedBox(width: 85,),
-                          Padding(
-                              padding: const EdgeInsets.only(bottom: 8),
-                              child: Text("dd/mm/yy",style: TextStyle(color: Colors.grey),)
-                          )
-                        ],
+            itemCount: 20,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.only(left: 10, top: 0, right: 10),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10, bottom: 20),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 55,
+                        width: 50,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                                image: AssetImage("assets/community.jpg"),
+                                fit: BoxFit.cover)),
                       ),
-                    ),
-                  );
-                },
-              ))
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 5),
+                        child: Column(
+                          children: [
+                            Text(
+                              "Community Name",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 45),
+                              child: Text(
+                                'Last message',
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 85,
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Text(
+                            "dd/mm/yy",
+                            style: TextStyle(color: Colors.grey),
+                          ))
+                    ],
+                  ),
+                ),
+              );
+            },
+          ))
         ],
       ),
     );

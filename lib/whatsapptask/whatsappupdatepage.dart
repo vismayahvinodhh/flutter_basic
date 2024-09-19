@@ -111,7 +111,7 @@ class _Whatsapp_updatesState extends State<Whatsapp_updates> {
                           children: [
                             CircleAvatar(
                               backgroundImage:
-                              AssetImage("assets/whatsapp_dp.jpg"),
+                              AssetImage("assets/person.jpeg"),
                               radius: 35,
                             ),
                             SizedBox(
@@ -190,7 +190,7 @@ class _Whatsapp_updatesState extends State<Whatsapp_updates> {
                         style: TextStyle(color: Colors.grey),
                       ),
                       leading: CircleAvatar(
-                        backgroundImage: AssetImage("assets/whatsapp_dp.jpg"),
+                        backgroundImage: AssetImage("assets/person.jpeg"),
                         radius: 28,
                       ),
                     ),

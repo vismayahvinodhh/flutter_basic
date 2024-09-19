@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutterbasic/whatsapptask/whatsappsettingspage.dart';
+import 'package:image_picker/image_picker.dart';
 
 class Whatsapp_home extends StatefulWidget {
   const Whatsapp_home({super.key});
@@ -9,6 +12,19 @@ class Whatsapp_home extends StatefulWidget {
 }
 
 class _Whatsapp_homeState extends State<Whatsapp_home> {
+  File? _image;
+
+  Future<void> _pickImage() async {
+    final pickedFile =
+        await ImagePicker().pickImage(source: ImageSource.camera);
+
+    if (pickedFile != null) {
+      setState(() {
+        _image = File(pickedFile.path);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,9 +45,11 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
-            child: Icon(
-              Icons.camera_alt_outlined,
-              color: Colors.white,
+            child: InkWell(onTap: _pickImage,
+              child: Icon(
+                Icons.camera_alt_outlined,
+                color: Colors.white,
+              ),
             ),
           ),
           Padding(
@@ -123,7 +141,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
             padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
             child: Container(
               height: 50,
-              child: TextFormField(
+              child: TextFormField(style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                     hintText: '  Ask Meta AI or Search',
                     hintStyle:
@@ -135,7 +153,6 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                         padding: const EdgeInsets.only(left: 15),
                         child: Image(
                           image: AssetImage("assets/meta-ai-logo.webp"),
-
                         ),
                       ),
                     ),
@@ -233,7 +250,7 @@ class _Whatsapp_homeState extends State<Whatsapp_home> {
                     style: TextStyle(color: Colors.grey),
                   ),
                   leading: CircleAvatar(
-                    backgroundImage: AssetImage("assets/user2.jpeg"),
+                    backgroundImage: AssetImage("assets/person.jpeg"),
                     radius: 25,
                   ),
                 ),

@@ -55,7 +55,7 @@ class _Whatsapp_settingsState extends State<Whatsapp_settings> {
                   decoration: BoxDecoration(
                       color: Colors.green.shade700,
                       borderRadius: BorderRadius.circular(100),
-                      image: DecorationImage(image:  AssetImage("assets/user2.jpeg"),fit: BoxFit.fill)
+                      image: DecorationImage(image:  AssetImage("assets/person.jpeg"),fit: BoxFit.fill)
                   ),
                 ),
                 SizedBox(
@@ -111,14 +111,7 @@ class _Whatsapp_settingsState extends State<Whatsapp_settings> {
               SizedBox(
                 width: 20,
               ),
-              Text(
-                "Recent",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+
             ],
           ),
           SizedBox(
